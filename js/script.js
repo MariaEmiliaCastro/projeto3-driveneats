@@ -7,6 +7,9 @@ function comidaSelecionada (comida) {
     }
 
     comida.classList.add("prato-selecionado");
+
+    pedidoLiberado();
+    
 }
 
 function bebidaSelecionada (bebida) {
@@ -18,6 +21,8 @@ function bebidaSelecionada (bebida) {
     }
 
     bebida.classList.add("bebida-selecionada");
+
+    pedidoLiberado();
 }
 
 function sobremesaSelecionada (sobremesa) {
@@ -29,10 +34,35 @@ function sobremesaSelecionada (sobremesa) {
     }
 
     sobremesa.classList.add("sobremesa-selecionada");
+
+    pedidoLiberado();
 }
 
-function comprar (pedido) {
+function pedidoLiberado () {
 
-    
+    let botao = document.querySelector('.botao');
 
+    let selecionados = [document.querySelector('.prato-selecionado'), document.querySelector('.bebida-selecionada'), document.querySelector('.sobremesa-selecionada')];
+    console.log(selecionados);
+    if(!selecionados.includes(null)){
+        botao.classList.add("botao-selecionado");
+        botao.innerHTML = "Fechar Pedido";
+
+        return true;
+    }else{
+        console.log("Selecione um prato, bebida e sobremesa");
+
+        return false;
+    }
+
+}
+
+function comprar(pedido) {
+    if (pedidoLiberado()){
+        let cardFinalizacao = document.querySelector('.card-finalizacao');
+        cardFinalizacao.classList.remove('esconder');
+        alert("Pedido realizado com sucesso!");
+    }else{
+        alert("Selecione um prato, bebida e sobremesa");
+    }
 }
