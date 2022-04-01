@@ -20,19 +20,19 @@
                 <h3>Primeiro, seu prato</h3>
             </div>
             <div class="prato">
-                <div class="card-prato">
+                <div class="card-prato" onclick="comidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="comidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="comidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
@@ -43,19 +43,19 @@
                 <h3>Agora, sua bebida</h3>
             </div>            
             <div class="bebida">
-                <div class="card-prato">
+                <div class="card-prato" onclick="bebidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="bebidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="bebidaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
@@ -66,19 +66,19 @@
                 <h3>Por fim, sua sobremesa</h3>
             </div>            
             <div class="sobremesa">
-                <div class="card-prato">
+                <div class="card-prato" onclick="sobremesaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="sobremesaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
                     <span class="preco">R$ 15,00</span>
                 </div>
-                <div class="card-prato">
+                <div class="card-prato" onclick="sobremesaSelecionada(this)">
                     <img src="img/prato1.png" alt="">
                     <span class="nome-prato">Lasanha</span>
                     <span class="descricao">Quatro tipos de queijo diferentes</span>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="barra-inferior">
-            <button type="submit" class="botao">Selecione os 3 itens </br> para fechar o pedido</button>
+            <button type="submit" onsubmit="comprar(this)" class="botao">Selecione os 3 itens </br> para fechar o pedido</button>
         </div>
     </div>
     <script src="js/script.js"></script>
