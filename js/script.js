@@ -2,11 +2,16 @@ function comidaSelecionada (comida) {
 
     let comidaAnterior = document.querySelector('.prato-selecionado');
 
+    
+
     if (comidaAnterior !== null) {
         comidaAnterior.classList.remove('prato-selecionado');
+        let checkAnterior = comidaAnterior.getElementsByTagName('ion-icon')[0];
+        checkAnterior.classList.remove('checked');
     }
 
     comida.classList.add("prato-selecionado");
+    comida.getElementsByTagName('ion-icon')[0].classList.add("checked");
 
     pedidoLiberado();
     
@@ -18,9 +23,12 @@ function bebidaSelecionada (bebida) {
 
     if (bebidaAnterior !== null) {
         bebidaAnterior.classList.remove('bebida-selecionada');
+        let checkAnterior = bebidaAnterior.getElementsByTagName('ion-icon')[0];
+        checkAnterior.classList.remove('checked');
     }
 
     bebida.classList.add("bebida-selecionada");
+    bebida.getElementsByTagName('ion-icon')[0].classList.add("checked");
 
     pedidoLiberado();
 }
@@ -31,9 +39,12 @@ function sobremesaSelecionada (sobremesa) {
 
     if (sobremesaAnterior !== null) {
         sobremesaAnterior.classList.remove('sobremesa-selecionada');
+        let checkAnterior = sobremesaAnterior.getElementsByTagName('ion-icon')[0];
+        checkAnterior.classList.remove('checked');
     }
 
     sobremesa.classList.add("sobremesa-selecionada");
+    sobremesa.getElementsByTagName('ion-icon')[0].classList.add("checked");
 
     pedidoLiberado();
 }

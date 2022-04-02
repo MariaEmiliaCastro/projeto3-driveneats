@@ -98,6 +98,8 @@
         border-radius: 9px;
         margin-bottom: 27px;
         margin-right: 16px;
+
+        
     }
     
     .card-prato > img {
@@ -105,6 +107,7 @@
         height: 87px;
         border-radius: 4px;
         margin-bottom: 4px;
+        object-fit: cover;
     }
     
     .nome-prato {
@@ -178,6 +181,7 @@
     }
 
     ion-icon {
+        display: none;
         font-size: 16px;
         color: #32B72F;
     }
@@ -187,15 +191,15 @@
     }
 
     .prato-selecionado {
-        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
     }
 
     .bebida-selecionada {
-        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
     }
 
     .sobremesa-selecionada {
-        box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
     }
 
     .botao-selecionado {
@@ -216,7 +220,7 @@
         border-radius: 9px;
     } */
 
-    .escondido {
-        display: none;
+    .checked {
+        display: inherit;
     }
 }
